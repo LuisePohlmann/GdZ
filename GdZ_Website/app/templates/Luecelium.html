@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+
+<div class="green_margin">
+<h1>Lücelium</h1>
+
+<div class = "post1">
+  <h2>Willkommen</h2>
+  <p> Wir sind „Lücelium“ und beschäftigen uns mit dem unglaublichen Potential von Myzel. Aber was ist das eigentlich ? Myzel ist das verzweigte Pilzgeflecht im Boden, welches mit Abstand den größten Teil eines Pilzes ausmacht. In unserem Projekt setzen wir uns damit auseinander, wie Myzel für verschiedene Produkte nutzbar gemacht werden kann. Mögliche Anwendungsbereiche sind Möbel, Verpackungsalternativen, Lederimitate, Dämmungsmaterialien oder sogar Lebensmittel, wie zum Beispiel Fleischersatzprodukte. Da wir uns intensiver mit den Dämmungseigenschaften von Myzeldämmung befassen, führen wir aktuell Experimente in den Laboren der Leuphana Universität Lüneburg durch. </p>
+</div>
+  </div>
+
+<div class="blog">
+<div class ="blogpost">
+  {% for article in articles %}
+  <article>
+      <h1>{{article.title}}</h1>
+      <h3>{{article.date}}</h3>
+      <img src="static/{{ article.img }}" class="anim">
+      <h4>{{article.author}}</h4>
+      <p>{{article.content}}</p>
+  </article>
+  {% endfor %}
+</div>
+</div>
+
+<div class ="Termine">
+  <div class="termin">
+  <h2>Bilder</h2>
+  {% for article in articles %}
+      <img src="static/{{ article.img }}" class="anim">
+  {% endfor %}
+  </div>
+  </div>
+
+{% endblock %}

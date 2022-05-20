@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+<div class="green_margin">
+<h1>Home</h1>
+
+<div class = "post1">
+  <h2>Willkommen</h2>
+  <p>Das ist die Website des Gartens der Zukunft. Der Garten der Zukunft ist ein Projekt der Leupahana Universität Lüneburg.</p>
+</div>
+  </div>
+
+<div class="blog">
+<div class ="blogpost">
+  {% for article in articles %}
+  <article>
+      <h1>{{article.title}}</h1>
+      <h3>{{article.date}}</h3>
+      <img src="static/{{ article.img }}" class="anim">
+      <p>{{article.content}}</p>
+      <h4>{{article.author}}</h4>
+  </article>
+  {% endfor %}
+</div>
+</div>
+
+<div class ="Termine">
+  <div class="termin">
+  <h2>Termine</h2>
+    {% for Termin in Termine %}
+    <article>
+        <h1>{{Termin.title}}</h1>
+        <h3>{{Termin.date}}</h3>
+        <p>{{Termin.content}}</p>
+    </article>
+    {% endfor %}
+  </div>
+  </div>
+
+{% endblock %}

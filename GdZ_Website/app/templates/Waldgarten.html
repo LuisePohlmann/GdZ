@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+<div class="green_margin">
+<h1>Waldgarten</h1>
+
+<div class = "post1">
+  <h2>Willkommen</h2>
+  <p> Wir sind mit der Gesamtplanung des Gartens beschäftigt, mit der Einbeziehung aller Elemente in ein symbiotisches Zusammenwirken. Dafür haben wir uns intensiv mit Permakultur-Prozessen auseinandergesetzt und ein Dokumentationstool entwickelt, um das gestaltete Permakultur-Design wissenschaftlich zu beobachten. Um den Garten sinnvoll zu entwickeln, haben wir ein Mapping durchgeführt, Bodenproben genommen und analysiert, einen Pflanz-Plan erstellt, sowie Ideen für nützliche Gartenkomponenten gesammelt. Dabei ist eine Vision entstanden, wie wir den Garten nach den Bedürfnissen der Seminar-Gruppen ausgestalten können. </p>
+</div>
+  </div>
+
+<div class="blog">
+<div class ="blogpost">
+  {% for article in articles %}
+  <article>
+      <h1>{{article.title}}</h1>
+      <h3>{{article.date}}</h3>
+      <img src="static/{{ article.img }}" class="anim">
+      <p>{{article.content}}</p>
+      <h4>{{article.author}}</h4>
+  </article>
+  {% endfor %}
+</div>
+</div>
+
+<div class ="Termine">
+  <div class="termin">
+  <h2>Bilder</h2>
+  {% for article in articles %}
+      <img src="static/{{ article.img }}" class="anim">
+  {% endfor %}
+  </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+
+<div class="green_margin">
+<h1>Mitmachen</h1>
+</div>
+
+<div class="blog">
+<p>Sie möchten im Garten mithelfen? Bitte kontaktieren Sie ... oder nehmen sie an einem unsere Events Teil!</p>
+</div>
+
+<div class ="Termine">
+  <div class="termin">
+  <h2>Termine</h2>
+    {% for Termin in Termine %}
+    <article>
+        <h1>{{Termin.title}}</h1>
+        <h3>{{Termin.date}}</h3>
+        <p>{{Termin.content}}</p>
+    </article>
+    {% endfor %}
+  </div>
+  </div>
+
+{% endblock %}

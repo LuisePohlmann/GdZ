@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+
+<div class="green_margin">
+<h1>Projekte</h1>
+
+<div class = "post1">
+  <h2>Willkommen</h2>
+  <p>Hier finden Sie eine Übersicht über unsere Projekte: </p>
+</div>
+  </div>
+
+<div class="blog">
+<div class ="blogpost">
+  <ul>
+    <li><a href="/Waldgarten">Waldgarten</a></li>
+    <li><a href="/Algen">Algen</a></li>
+    <li><a href="/Kraeutergarten">Kräutergarten</a></li>
+    <li><a href="/Luecelium">Lücelium</a></li>
+    <li><a href="/Kunterbunt">Kunterbunt</a></li>
+    <li><a href="/soz_Begegnung">soziale Begegnung</a></li>
+    <li><a href="/Kraeutergarten">Kräutergarten</a></li>
+    <li><a href="/vert_farming">Vertical Farming</a></li>
+    <li><a href="/Weihnachtspilze">Weihnachtspilze</a></li>
+  </ul>
+
+  <div class ="Termine">
+    <div class="termin">
+    <h2>Bilder</h2>
+    {% for article in articles %}
+        <img src="static/{{ article.img }}" class="anim">
+    {% endfor %}
+    </div>
+    </div>
+
+{% endblock %}

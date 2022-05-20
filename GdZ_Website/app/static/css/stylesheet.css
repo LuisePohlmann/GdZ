@@ -1,0 +1,282 @@
+Trebuchet MS* {
+  margin: 0;
+  padding:0;
+}
+.green_margin {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+}
+body {
+  font: 'Trebuchet MS';
+  background-color: #7bb661;
+}
+
+h1{
+  background-color:white;
+  font: 'Trebuchet MS', sans-serif;
+  font-style: bold;
+  margin: 20px;
+  text-align: center;
+}
+
+h2  {
+ font: 'Trebuchet MS', sans-serif;
+}
+
+h3{
+  font: 'Trebuchet MS';
+  color:lightgrey;
+  size: 0.8em;
+  text-align: right;
+  font-style: italic;
+}
+
+h4{
+  font: 'Trebuchet MS';
+  color:lightgrey;
+  size: 0.8em;
+  padding-right: 20px;
+  text-align: right;
+  font-style: italic;
+}
+
+
+#container {
+  position: relative;
+  width:100%;
+  margin: auto;
+}
+
+#logo {
+  line-height:60px;
+  font-size:30px;
+  padding: 0 50px;
+  color: white;
+  width:40%;
+  letter-spacing:2px;
+  text-shadow:2px 2px 5px;
+}
+
+#container > nav {
+  margin: auto;
+  width:100%;
+  background-color: #7bb661;
+}
+
+#container > nav > ul {
+  position: static;
+  background-color: #7bb661;
+  width: 50%;
+  margin:auto;
+  padding:0;
+  list-style-type:none;
+  display:flex;
+  justify-content: space-between;
+}
+#container > nav > ul > li {
+  margin: 0;
+  padding:0;
+  display: flex;
+  text-align:center;
+
+}
+#container > nav > ul > li > a {
+  position: relative;
+  margin: 10px 10px;
+  color:white;
+}
+
+#container > nav > ul > li > a:hover {
+  background-color: #137b58;
+}
+
+#container > nav > ul > li:hover {
+  border-bottom: 2px solid white;
+  background-color: #137b58;
+}
+#container > nav > ul > .dropdown:hover {
+  border-bottom:none;
+}
+#container > nav > ul > .dropdown:hover >  .dd
+{
+  display: block;
+}
+.dropdown:hover > a .fa-caret-down {
+  display:none;
+}
+a {
+  text-decoration:none;
+}
+
+#container > nav > ul > li > div {
+  position:absolute;
+  display:none;
+}
+
+#container > nav > ul > li > div > ul {
+  display: block;
+  position:relative;
+  width:110px;
+  height:300px;
+  top: 10px;
+  margin:0px 0 10px 0;
+  padding: 5px;
+  list-style:none;
+  background-color: #137b58;
+  color: white;
+  opacity: 0.9;
+  padding: 10px;
+  }
+
+#u_a_c {
+  position:relative;
+  width:100%;
+}
+#up_arrow {
+  position:relative;
+  width:20px;
+  height:20px;
+  left: 25%;
+  top: 30px;
+  margin: 2px;
+  transform:rotate(45deg);
+}
+
+#koop {
+  display: block;
+  position:relative;
+  width:110px;
+  height:100px;
+  top: 10px;
+  margin:0px 0 10px 0;
+  padding: 5px;
+  list-style:none;
+  background-color: #137b58;
+  opacity: 0.9;
+  padding: 10px;
+  }
+
+#koop a:hover {
+  background-color:rgba(0,0,0,0.2);
+  padding: 5px;
+}
+#koop  a {
+  display: block;
+  margin: 2px;
+  color: white;
+  padding: 5px;
+}
+
+#container > nav > ul > li> div > ul a:hover {
+  background-color:rgba(0,0,0,0.2);
+  padding: 5px;
+}
+#container > nav > ul > li > div > ul > a {
+  display: block;
+  margin: 2px;
+  color: white;
+  padding: 5px;
+
+}
+
+.galerie{
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.galerie p{
+  color: lightgrey;
+
+}
+.post1{
+  display: block;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+}
+
+.post1 p{
+  display: block;
+  margin: 20px;
+  line-height: 120%;
+  text-align: justify;
+  margin: 20px auto 20px;
+}
+.blog{
+  display: flex;
+  justify-content: space-between;
+  float:left;
+  width: 50%;
+  background-color:white;
+  margin-top: 20px;
+  margin-left: 8.5%;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.blog.blogpost{
+  display: block;
+  margin: 20px;
+  padding:20px;
+  color: black;
+}
+
+
+.blog p{
+  margin: 20px;
+  line-height: 120%;
+  text-align: justify;
+}
+
+.Termine{
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  width: 25%;
+  background-color: white;
+  color:black;
+  margin-top: 20px;
+  margin-right: 8.5%;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.Termine p{
+  text-align: justify
+}
+
+.Termine.termin{
+  display: block;
+  margin: 20px;
+  padding:20px;
+  color: black;
+}
+
+img{
+  max-width: 60%;
+  margin: 10px;
+}
+
+footer{
+  background-color: #7bb661;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+footer > a {
+    position: flex;
+    bottom: 0;
+    width: 30%;
+    color: white;
+    padding: 10px;
+    margin: 10%;
+}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+<h1>Galerie </h1>
+
+<div class="galerie">
+    {% for article in articles %}
+        <img src="static/{{ article.img }}" class="anim">
+         <p>{{article.title}}</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

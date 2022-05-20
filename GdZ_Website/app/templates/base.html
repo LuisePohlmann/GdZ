@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Der Garten der Zukunft</title>
+       <link href="../static/css/stylesheet.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <div id="logo">
+          der Garten der Zukunft
+        </div>
+        <ul>
+          <li><a href="/Home">Home</a></li>
+          <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="/Projekte">Projekte &nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="dd">
+              <div id="up_arrow"></div>
+              <ul>
+              <a href="/Waldgarten">Waldgarten</a>
+              <a href="/Algen">Algen</a>
+              <a href="/Kraeutergarten">Kräutergarten</a>
+              <a href="/Luecelium">Lücelium</a>
+              <a href="/Kunterbunt">Kunterbunt</a>
+              <a href="/soz_Begegnung">soziale Begegnung</a>
+              <a href="/Kraeutergarten">Kräutergarten</a>
+              <a href="/vert_farming">Vertical Farming</a>
+              <a href="/Weihnachtspilze">Weihnachtspilze</a>
+            </ul>
+            </div>
+
+          </li>
+          <li class="dropdown"><a href="/Unterstuetzen">Unterstuetzen &nbsp;<i class="fa fa-caret-down"></i> </a>
+           <div class="dd">
+             <div id="u_a_c"><div id="up_arrow"></div></div>
+            <div id="koop" >
+              <a href="/Mitmachen">Mitmachen</a>
+              <a href="/Kooperationen">Kooperationen</a>
+              <a href="/Spenden">Spenden</a>
+            </div>
+            </div>
+            <li><a href="/Galerie">Galerie</a></li>
+            <li><a href="/About">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    {% block bodycontent %}
+    {% endblock %}
+  </body>
+  <footer>
+<a href="/Impressum">Impressum</a>
+<a href="/FAQ">FAQ</a>
+<a href="/Kontakt">Kontakt</a>
+</footer>
+
+</html>

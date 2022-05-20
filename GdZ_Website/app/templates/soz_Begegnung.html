@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+
+<div class="green_margin">
+<h1>soziale Begegnungen</h1>
+
+<div class = "post1">
+  <h2>Willkommen</h2>
+  <p> Was wir machen... </p>
+</div>
+  </div>
+
+<div class="blog">
+<div class ="blogpost">
+  {% for article in articles %}
+  <article>
+      <h1>{{article.title}}</h1>
+      <h3>{{article.date}}</h3>
+      <img src="static/{{ article.img }}" class="anim">
+      <p>{{article.content}}</p>
+      <h4>{{article.author}}</h4>
+  </article>
+  {% endfor %}
+</div>
+</div>
+
+<div class ="Termine">
+  <div class="termin">
+  <h2>Bilder</h2>
+  {% for article in articles %}
+      <img src="static/{{ article.img }}" class="anim">
+  {% endfor %}
+  </div>
+  </div>
+
+{% endblock %}

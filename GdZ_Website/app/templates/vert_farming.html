@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block bodycontent %}
+
+<div class="green_margin">
+<h1>Vertical Farming</h1>
+
+<div class = "post1">
+  <h2>Willkommen</h2>
+  <p> Da die Weltbevölkerung weiterhin rasant wächst und gleichzeitig die Nachfrage nach Lebensmitteln in den nächsten 50 Jahren erheblich zunehmen wird, werden 80 % der Bevölkerung in städtischen Gebieten leben. Um diese wachsende Bevölkerung zu ernähren, besteht ein Bedarf an nachhaltigen Lebensmitteln in Städten.Bei der vertikalen Landwirtschaft handelt es sich um ein Konzept, das den Anbau von Pflanzen auf vertikal geneigten Flächen vorsieht. Dies kann z.B. in Wolkenkratzern, Industriegebäuden, sogar in Seecontainern und in unseren Gärten umgesetzt werden. Ebenso in städtischen Gebieten, wo es an verfügbarem Land und Platz mangelt.Vertikale Farmen können Lösungen für die Erhöhung der weltweiten Ernährungssicherheit bieten. </p>
+</div>
+  </div>
+
+<div class="blog">
+<div class ="blogpost">
+  {% for article in articles %}
+  <article>
+      <h1>{{article.title}}</h1>
+      <h3>{{article.date}}</h3>
+      <img src="static/{{ article.img }}" class="anim">
+      <p>{{article.content}}</p>
+      <h4>{{article.author}}</h4>
+  </article>
+  {% endfor %}
+</div>
+</div>
+
+<div class ="Termine">
+  <div class="termin">
+  <h2>Bilder</h2>
+  {% for article in articles %}
+      <img src="static/{{ article.img }}" class="anim">
+  {% endfor %}
+  </div>
+  </div>
+
+{% endblock %}
